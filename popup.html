@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="container" class="flex flex-col gap-1 items-center px-4 py-10">
+        <img src="404.png">
+        <span class="text-white justify-center text-center text-lg font-bold">Anime not found on AnimeFLV</span>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+  </body>
+</html>
+<style>
+    body {
+        height: 250px;
+        width: 200px;
+        background-color: #364696;
+    }
+
+    img {
+        border-radius: 10%;
+        width: 150px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .gap-1 {
+        gap: 0.5rem;
+    }
+
+    .items-center {
+        align-items: center;
+    }
+
+    .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .py-10 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .text-white {
+        color: rgb(255 255 255);
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .button-57 {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #18181a;
+        color: #18181a;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 15px;
+        padding: 18px 18px 17px;
+        text-decoration: none;
+        cursor: pointer;
+        background: #fff;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-57 span:first-child {
+        position: relative;
+        transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+        z-index: 10;
+    }
+
+    .button-57 span:last-child {
+        color: white;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+        z-index: 100;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateY(225%) translateX(-50%);
+        height: 14px;
+        line-height: 13px;
+    }
+
+    .button-57:after {
+        content: "";
+        position: absolute;
+        bottom: -50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        transform-origin: bottom center;
+        transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+        transform: skewY(9.3deg) scaleY(0);
+        z-index: 50;
+    }
+
+    .button-57:hover:after {
+        transform-origin: bottom center;
+        transform: skewY(9.3deg) scaleY(2);
+    }
+
+    .button-57:hover span:last-child {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 1;
+        transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+    }
+</style>
